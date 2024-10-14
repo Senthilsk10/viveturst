@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivekanandha Trust</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #f8f9fa;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        h1 {
+            margin: 0 auto;
+            font-size: 2.5em;
+        }
+
+        img {
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+            margin-right: 20px; /* Space between logo and title */
+        }
+
+        h2 {
+            margin-top: 20px;
+            font-size: 1.8em;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 20px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #gallery {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: 150px;
+            margin: 10px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="images/trustlogo.png" alt="Vivekanandha Photo">
+    <h1>Vivekanandha Trust</h1>
+</header>
+
+<h2>Documentation Event Photos</h2>
+
+<button onclick="toggleGallery()">View Gallery</button>
+
+<div id="gallery" class="gallery">
+    <a href="https://annamalaiuniversity.ac.in/photogallery2024.php"> <u>click here</u></a>
+    
+</div>
+
+<script>
+    function toggleGallery() {
+        var gallery = document.getElementById("gallery");
+        if (gallery.style.display === "none") {
+            gallery.style.display = "block";
+        } else {
+            gallery.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+
+</html>
