@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script>
+
+</head>
+<body>
+    
+    <table id="myTable">
+        <thead>
+            <tr>
+                <th>S.No.</th>
+                <th>Activity Name</th>
+                <th>Client Name</th>
+                <th>Location (Blocks, Districts and States)</th>
+                <th>Project Cost (Rs. in Lakhs)</th>
+                <th>Total Project Cost (Rs. in Lakhs)</th>
+                <th>Date of Commencement</th>
+                <th>Date of Completion</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Sponsored awareness Programme Climate change awareness programme</td>
+                <td>Dr. Kavaskar, Associate Professor, Annamalai University</td>
+                <td>Mambatuu, village Polur block Tiruvannamalai</td>
+                <td>85000</td>
+                <td>85000</td>
+                <td>05-04-2021</td>
+                <td>25-03-2022</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Sponsored Rural Empowerment Trainings</td>
+                <td>Dr. Kavaskar, Associate Professor, Annamalai University</td>
+                <td>Javadhu Hills, Tiruvannamalai</td>
+                <td>104204</td>
+                <td>104204</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Self propelled programmes Youth awareness programme</td>
+                <td>Trustee contribution and other donations</td>
+                <td>Tiruvannamalai</td>
+                <td>56980</td>
+                <td>56980</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Self propelled programmes Child labours awareness programme and Child development</td>
+                <td></td>
+                <td>Mambattu</td>
+                <td>43890</td>
+                <td>43890</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Self propelled programmes Environment awareness programme and Environmental protection and pollution control measures</td>
+                <td></td>
+                <td>Tiruvannamalai</td>
+                <td>12500</td>
+                <td>12500</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Self propelled programmes Women awareness programme</td>
+                <td></td>
+                <td>Cuddalore</td>
+                <td>24640</td>
+                <td>24640</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Self propelled programmes Tree plantation programme</td>
+                <td></td>
+                <td>Cuddalore</td>
+                <td>19718</td>
+                <td>19718</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>CSR projects Integrated Rural Development for Sustainable Livelihoods Participatory field trial project</td>
+                <td>M/S.Aqua Agri. Ltd.</td>
+                <td>Javadhu Hills, Tiruvannamalai</td>
+                <td>500000</td>
+                <td>500000</td>
+                <td>04-05-2022</td>
+                <td>23-02-2023</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Sponsored Rural Empowerment Trainings Skill Development Programme</td>
+                <td>Donations</td>
+                <td>Cuddalore</td>
+                <td>55000</td>
+                <td>55000</td>
+                <td>22-04-2022</td>
+                <td>31-03-2023</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Sponsored Rural Empowerment Trainings Women SHG Formation Programme</td>
+                <td>Donations</td>
+                <td>Polur</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>A capacity building programme on ICAR–IIHR technologies was organized under SCSP and TSP special programmes of ICAR – IIHR</td>
+                <td>ICAR –IIHR, Bengaluru</td>
+                <td>Chidambaram, Cuddalore</td>
+                <td></td>
+                <td></td>
+                <td>16-08-2023</td>
+                <td>17-08-2023</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Sponsored Training cum demonstration programme for rice farmers in Cuddalore district organized under SCSP and TSP special programmes of IIRR</td>
+                <td>ICAR-IIRR Hyderabad and Annamalai University</td>
+                <td>Chidambaram, Cuddalore</td>
+                <td>500000</td>
+                <td>500000</td>
+                <td>08-09-2022</td>
+                <td>07-09-2023</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>Training on Bee keeping and honey value addition</td>
+                <td>Collaboration with Annamalai University</td>
+                <td>Chidambaram</td>
+                <td></td>
+                <td></td>
+                <td>25-06-2022</td>
+                <td>08-09-2022</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <script>
+        $(document).ready(function() {
+            $('#myTable').DataTable();
+        });
+    </script>
+        
+</body>
+</html>
