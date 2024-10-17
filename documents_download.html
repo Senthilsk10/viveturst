@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Gallery</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        /* Gallery styling */
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Individual link container */
+        .gallery-item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            border: 1px solid #ddd;
+            padding: 10px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            transition: box-shadow 0.3s ease;
+        }
+
+        /* Hover effect for gallery item */
+        .gallery-item:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Link styling */
+        .gallery-item a {
+            text-decoration: none;
+            color: #002366;
+            font-size: 16px;
+            flex-grow: 1;
+        }
+
+        /* Download icon styling */
+        .download-icon {
+            position: absolute;
+            right: 10px;
+            color: #002366;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        /* Responsive styling for small screens */
+        @media (max-width: 600px) {
+            .gallery-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .download-icon {
+                position: static;
+                margin-top: 5px;
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="gallery5" class="gallery">
+        <div class="gallery-item">
+            <a href="pdf/VIVEKANANDHA TRUST 2024.pdf" download>VIVEKANANDHA TRUST 2024</a>
+            <a href="pdf/VIVEKANANDHA TRUST 2024.pdf" class="download-icon" download>&#128190;</a>
+        </div>
+        <div class="gallery-item">
+            <a href="pdf/doc2.pdf" download>Registration Certificate</a>
+            <a href="pdf/doc2.pdf" class="download-icon" download>&#128190;</a>
+        </div>
+        <div class="gallery-item">
+            <a href="pdf/AABTV9695HE20198 12 AA.pdf" download>Form 10 AC</a>
+            <a href="pdf/AABTV9695HE20198 12 AA.pdf" class="download-icon" download>&#128190;</a>
+        </div>
+        <div class="gallery-item">
+            <a href="pdf/AABTV9695HF20212 80 G.pdf" download>Form 80G</a>
+            <a href="pdf/AABTV9695HF20212 80 G.pdf" class="download-icon" download>&#128190;</a>
+        </div>
+        <div class="gallery-item">
+            <a href="pdf/CSR CERTIFICATE.pdf" download>Certificate of Social Responsibility</a>
+            <a href="pdf/CSR CERTIFICATE.pdf" class="download-icon" download>&#128190;</a>
+        </div>
+        <div class="gallery-item">
+            <a href="pdf/doc3.pdf" download>Supplementary Deed</a>
+            <a href="pdf/doc3.pdf" class="download-icon" download>&#128190;</a>
+        </div>
+        <div class="gallery-item">
+            <a href="pdf/doc4.pdf" download>Deed of Declaration of Trust</a>
+            <a href="pdf/doc4.pdf" class="download-icon" download>&#128190;</a>
+        </div>
+        <div class="gallery-item">
+            <a href="pdf/ICAR-IIMR MoU with Vivekanandha Trust.pdf" download>ICAR-IIMR MoU with Vivekanandha Trust</a>
+            <a href="pdf/ICAR-IIMR MoU with Vivekanandha Trust.pdf" class="download-icon" download>&#128190;</a>
+        </div>
+        <div class="gallery-item">
+            <a href="pdf/Tribal project sanctioned order.pdf" download>Tribal project sanctioned order</a>
+            <a href="pdf/Tribal project sanctioned order.pdf" class="download-icon" download>&#128190;</a>
+        </div>
+        <div class="gallery-item">
+            <a href="pdf/Vivekanandha Trsut Empaneled  by  Tribal Welfare Gepartment Government of Tamil Nadu.pdf" download>Vivekanandha Trsut Empaneled  by  Tribal Welfare Gepartment Government of Tamil Nadu</a>
+            <a href="pdf/Vivekanandha Trsut Empaneled  by  Tribal Welfare Gepartment Government of Tamil Nadu.pdf" class="download-icon" download>&#128190;</a>
+        </div>
+    </div>
+
+</body>
+</html>
