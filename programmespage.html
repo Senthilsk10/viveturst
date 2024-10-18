@@ -315,8 +315,6 @@
                 width: 100%;
                 height: 300px;
                 border-radius: 8px;
-                /* max-width: max-content; */
-                /* max-height: max-content; */
             }
             .section-two-column .column-text {
                 padding: 0 2rem;
@@ -340,7 +338,16 @@
             } 
         }
         @media only screen and (max-width: 768px) {
-   
+            .section-two-column, .main-section .section {
+                width: 85%;
+                margin: 1rem auto;
+            }
+            .section-two-column > * {
+                margin: 1rem 0;
+            }
+            .main-section .section {
+                display: block;
+            }
         }
     </style>
 
@@ -621,8 +628,7 @@
                 <p>More than 1500 small and marginal farmers benefitted under SCSP and TSP Plan ICAR institutes and created awareness for school students, 65000 medicinal plants (quality planting material) next month distributing cuddalore district farmers created drinking water facility for government school mambattu village</p>
             </div>
         </div>
-        
-        <div class="section" id="way-forward" style="display: none;">
+        <div class="section way-forward">
             <h2>Way forward</h2>
             <div>
                 <p>Vivekananda Trust is now working with Tribal welfare Livelihood projects implemented by Tamil Nadu Tribal Welfare Department, Government of Tamil Nadu under the banner “Ainthinai mission”.</p>
@@ -631,6 +637,7 @@
                 <p style="text-indent: 1rem;">2. Enhancing the livelihood of Scheduled Tribal Farmers of Tamil Nadu through ICAR-IIHR technologies.- ICAR- Indian institute of Horticulture Research -Bangalore</p>
                 <p style="text-indent: 1rem;">3. “Sustainable enhancement of livelihood of farmers through improved production technologies and value chain of millets in Tribal Areas of Tamil Nadu” - ICAR-Indian institute of Millet Research -Hyderabad</p>
             </div>
+            
         </div>
     </div>
     
