@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trust foundation </title>
+    <title>Donation</title>
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <script type="text/javascript" async="" src="js/ci_common.js"></script>
     <script async="" src="js/analytics.js"></script>
@@ -294,6 +294,10 @@
     <div class="header-top">
         <img src="images/trustlogo.png" id="header-logo" alt="logo">
         <h1 id="header-title">VIVEKANANDHA TRUST<br>விவேகானந்தா அறக்கட்டளை</h1>
+        <div id="rgn-number" class="blink">
+            <h5>RGN number</h5>
+            <h5>12834729347892374</h5>
+        </div>
 
         <style>
             #header-logo {
@@ -321,6 +325,27 @@
                 align-items: center;
                 border-bottom: 1px solid #ccc;
                 padding: 6px;
+            }
+
+            #rgn-number {
+                font-size: small;
+                padding-right: 2rem;
+            }
+
+            .blink {
+                animation: blink-animation 3s infinite;
+            }
+
+            @keyframes blink-animation {
+
+                0%,
+                100% {
+                    opacity: 1;
+                }
+
+                50% {
+                    opacity: 0;
+                }
             }
         </style>
     </div>
@@ -363,11 +388,19 @@
                                     Us<span class="mega-indicator"></span></a>
                                 <ul class="mega-sub-menu">
                                     <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-56"
-                                        id="mega-menu-item-56"><a class="mega-menu-link" href="aboutus.html">Founder</a>
+                                        id="mega-menu-item-56"><a class="mega-menu-link"
+                                            href="aboutus.html?t=introduction">Introduction</a>
                                     </li>
                                     <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-56"
-                                        id="mega-menu-item-56"><a class="mega-menu-link" href="aboutus.html">Vision
-                                            Mission </a></li>
+                                        id="mega-menu-item-56"><a class="mega-menu-link"
+                                            href="aboutus.html?t=founder">Founder</a>
+                                    </li>
+                                    <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-56"
+                                        id="mega-menu-item-56"><a class="mega-menu-link"
+                                            href="aboutus.html?t=vision">Vision</a></li>
+                                    <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-56"
+                                        id="mega-menu-item-56"><a class="mega-menu-link"
+                                            href="aboutus.html?t=mission">Mission </a></li>
                                     <ul class="mega-sub-menu">
                                     </ul>
                             </li>
@@ -379,29 +412,19 @@
                             <ul class="mega-sub-menu">
                                 <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-post mega-menu-item-1055"
                                     id="mega-menu-item-1055"><a class="mega-menu-link"
-                                        href="programmespage.html">Agricultural Division </a></li>
+                                        href="programmespage.html?t=iirr-colab">IIRR Collaboration </a></li>
                                 <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-post mega-menu-item-1055"
-                                    id="mega-menu-item-1055"><a class="mega-menu-link" ref="programmespage.html">IIRR
-                                        COLLABORATION </a></li>
+                                    id="mega-menu-item-1055"><a class="mega-menu-link"
+                                        href="programmespage.html?t=govt-colab">Collaboration with Government</a></li>
                                 <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-post mega-menu-item-712"
-                                    id="mega-menu-item-712"></li>
+                                    id="mega-menu-item-712"><a class="mega-menu-link"
+                                        href="programmespage.html?t=tribal-welfare">Tribal Welfare</a></li>
                                 <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-post mega-menu-item-1141"
-                                    id="mega-menu-item-1141"></li>
-                                <li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-menu-item-6889"
-                                    id="mega-menu-item-6889">
+                                    id="mega-menu-item-1141"><a class="mega-menu-link"
+                                        href="programmespage.html?t=efforts-impacts">Efforts and Impacts</a></li>
                                 <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-post mega-menu-item-712"
-                                    id="mega-menu-item-712"></li>
-                                <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-post mega-menu-item-1141"
-                                    id="mega-menu-item-1141"></li>
-                                <li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-menu-item-6889"
-                                    id="mega-menu-item-6889">
-                                    <ul class="mega-sub-menu">
-                                        <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-post mega-menu-item-708"
-                                            id="mega-menu-item-708"><a class="mega-menu-link"
-                                                href="https://www.mssrf.org/programmes/gender-grass-root-institutions/">Gender
-                                                &amp; Grassroot Institutions</a></li>
-                                    </ul>
-                                </li>
+                                    id="mega-menu-item-712"><a class="mega-menu-link"
+                                        href="programmespage.html?t=way-forward">Way Forward</a></li>
                             </ul>
                         </li>
                         <li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-align-bottom-left mega-menu-flyout mega-menu-item-8418"
@@ -409,29 +432,29 @@
                                 aria-expanded="false" tabindex="0">Media <span class="mega-indicator"></span></a>
                             <ul class="mega-sub-menu">
                                 <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-2042"
-                                    id="mega-menu-item-2042"><a class="mega-menu-link" href="documentation.html">Photo
+                                    id="mega-menu-item-2042"><a class="mega-menu-link"
+                                        href="documentation.html?t=photos">Photo
                                         gallery</a></li>
-                                <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-2042"
-                                    id="mega-menu-item-2042"><a class="mega-menu-link" href="documentation.html">Vedio
-                                        gallery</a></li>
-                                <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-2042"
-                                    id="mega-menu-item-2042"><a class="mega-menu-link" href="documentation.html">Media
-                                        coverage</a></li>
                                 <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-2042"
                                     id="mega-menu-item-2042"><a class="mega-menu-link"
-                                        href="documentation.html">Accreditation</a></li>
-                                <li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-menu-item-6902"
-                                    id="mega-menu-item-6902">
-                                    <ul class="mega-sub-menu">
-                                        <li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-7766"
-                                            id="mega-menu-item-7766"><a class="mega-menu-link"
-                                                href="https://flickr.com/photos/mssrf/albums">Photos</a></li>
-                                        <li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-7765"
-                                            id="mega-menu-item-7765"><a target="_blank" class="mega-menu-link"
-                                                href="http://www.youtube.com/channel/UCqPZ7OKG9vfLJgQFRlQv9sA">Videos</a>
-                                        </li>
-                                    </ul>
-                                </li>
+                                        href="documentation.html?t=video">Vedio
+                                        gallery</a></li>
+                                <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-2042"
+                                    id="mega-menu-item-2042"><a class="mega-menu-link"
+                                        href="documentation.html?t=media">Media
+                                        coverage</a></li>
+                            </ul>
+                        </li>
+                        <li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-align-bottom-left mega-menu-flyout mega-menu-item-8418"
+                            id="mega-menu-item-8418"><a class="mega-menu-link" href="#" aria-haspopup="true"
+                                aria-expanded="false" tabindex="0">Downloads <span class="mega-indicator"></span></a>
+                            <ul class="mega-sub-menu">
+                                <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-2042"
+                                    id="mega-menu-item-2042"><a class="mega-menu-link"
+                                        href="documentation.html?t=accreditation">Accreditation</a></li>
+                                <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-2042"
+                                    id="mega-menu-item-2042"><a class="mega-menu-link"
+                                        href="documentation.html?t=documentation">Documentation</a></li>
                             </ul>
                         </li>
                         <li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-align-bottom-left mega-menu-flyout mega-menu-item-59"
@@ -485,7 +508,7 @@
 
             .menu-header {
                 flex-grow: 1;
-                padding-left: 20%;
+                padding-left: 8%;
             }
 
             .donate-container {
@@ -509,40 +532,40 @@
         </style>
     </div>
 
-    <div class="container">
+    <div class="container" style="background-color: #e9e9ee; border-radius: 8px;">
         <div class="home-slider">
             <div class="swiper-container main_slider">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide" data-swiper-autoplay=""
-                        style="background: url(images/homeimage1.jpg) center center / cover no-repeat;">
+                        style="background: url(images/homeimage1.jpg) center center / contain no-repeat;">
                         <div class="bg-pt">
                             <img src="" alt="">
                         </div>
                     </div>
 
                     <div class="swiper-slide" data-swiper-autoplay=""
-                        style="background: url(images/homeimage6.jpg) center center / cover no-repeat;">
+                        style="background: url(images/homeimage6.jpg) center center / contain no-repeat;">
                         <div class="bg-pt">
                             <img src="" alt="">
                         </div>
                     </div>
 
                     <div class="swiper-slide" data-swiper-autoplay=""
-                        style="background: url(images/homeimage3.jpg) center center / cover no-repeat;">
+                        style="background: url(images/homeimage3.jpg) center center / contain no-repeat;">
                         <div class="bg-pt">
                             <img src="" alt="">
                         </div>
                     </div>
 
                     <div class="swiper-slide" data-swiper-autoplay=""
-                        style="background: url(images/homeimage4.jpg) center center / cover no-repeat;">
+                        style="background: url(images/homeimage4.jpg) center center / contain no-repeat;">
                         <div class="bg-pt">
                             <img src="" alt="">
                         </div>
                     </div>
 
                     <div class="swiper-slide" data-swiper-autoplay=""
-                        style="background: url(images/homeimage5.JPG) center center / cover no-repeat;">
+                        style="background: url(images/homeimage5.JPG) center center / contain no-repeat;">
                         <div class="bg-pt">
                             <img src="" alt="">
                         </div>
@@ -614,18 +637,96 @@
                         donation.</p>
                 </div>
             </div>
+            <style>
+                .donation-container {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+                    gap: 2rem;
+                    padding: 1rem;
+                }
 
+                .donation-card {
+                    background: white;
+                    border-radius: 15px;
+                    padding: 2rem;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    transition: transform 0.3s ease;
+                }
+
+                .donation-card:hover {
+                    transform: translateY(-5px);
+                }
+
+                .donation-card h3 {
+                    color: #2c3e50;
+                    margin-bottom: 1rem;
+                    font-size: 1.5rem;
+                    border-bottom: 2px solid #3498db;
+                    padding-bottom: 0.5rem;
+                }
+
+                .bank-details {
+                    background: #f8f9fa;
+                    padding: 1.5rem;
+                    border-radius: 10px;
+                    margin: 1.5rem 0;
+                }
+
+                .bank-details p {
+                    margin: 0.5rem 0;
+                    color: #555;
+                }
+
+                .bank-details strong {
+                    color: #2c3e50;
+                }
+
+                .qr-code {
+                    text-align: center;
+                    margin: 1.5rem 0;
+                }
+
+                .qr-code img {
+                    max-width: 350px;
+                    margin: 1rem 0;
+                    border: 2px solid #e0e0e0;
+                    border-radius: 10px;
+                }
+
+                .confirmation-link {
+                    text-align: center;
+                    margin-top: 1.5rem;
+                }
+
+                /* Fixed underline style for the link */
+                .confirmation-link a {
+                    color: #002366;
+                    text-decoration: underline;
+                    font-weight: 500;
+                }
+
+                .confirmation-link a:hover {
+                    color: #003399;
+                    text-decoration-thickness: 2px;
+                }
+
+                @media (max-width: 768px) {
+                    .donation-container {
+                        grid-template-columns: 1fr;
+                    }
+                }
+            </style>
+        </div>
+        <div class="container donation-container">
             <div class="donation-card">
                 <h3>Donation Details</h3>
                 <p>Your contributions make a difference. Donate to support our cause!</p>
                 <div class="bank-details">
                     <p><strong>Bank Name:</strong> INDIAN BANK</p>
-                    <p><strong>Account Number:</strong> 6304581373</p>
-                    <p><strong>IFSC Code:</strong> IDIB000M263</p>
-                </div>
-                <div class="qr-code">
-                    <p>Scan to Donate:</p>
-                    <img src="/images/QRCODE.png" alt="QR Code for Donation">
+                    <p><strong>Account Number:</strong> 621201159945</p>
+                    <p><strong>IFSC Code:</strong> ICIC0006212</p>
                 </div>
                 <div class="confirmation-link">
                     <p>Once you have donated, please <a href="confirmation.html">click here</a> to confirm your
@@ -636,47 +737,9 @@
                 <h3>Donation Details</h3>
                 <p>Your contributions make a difference. Donate to support our cause!</p>
                 <div class="bank-details">
-                    <p><strong>Bank Name:</strong> INDIAN BANK</p>
-                    <p><strong>Account Number:</strong> 6304581373</p>
-                    <p><strong>IFSC Code:</strong> IDIB000M263</p>
-                </div>
-                <div class="qr-code">
-                    <p>Scan to Donate:</p>
-                    <img src="/images/QRCODE.png" alt="QR Code for Donation">
-                </div>
-                <div class="confirmation-link">
-                    <p>Once you have donated, please <a href="confirmation.html">click here</a> to confirm your
-                        donation.</p>
-                </div>
-            </div>
-            <div class="donation-card">
-                <h3>Donation Details</h3>
-                <p>Your contributions make a difference. Donate to support our cause!</p>
-                <div class="bank-details">
-                    <p><strong>Bank Name:</strong> INDIAN BANK</p>
-                    <p><strong>Account Number:</strong> 6304581373</p>
-                    <p><strong>IFSC Code:</strong> IDIB000M263</p>
-                </div>
-                <div class="qr-code">
-                    <p>Scan to Donate:</p>
-                    <img src="/images/QRCODE.png" alt="QR Code for Donation">
-                </div>
-                <div class="confirmation-link">
-                    <p>Once you have donated, please <a href="confirmation.html">click here</a> to confirm your
-                        donation.</p>
-                </div>
-            </div>
-            <div class="donation-card">
-                <h3>Donation Details</h3>
-                <p>Your contributions make a difference. Donate to support our cause!</p>
-                <div class="bank-details">
-                    <p><strong>Bank Name:</strong> INDIAN BANK</p>
-                    <p><strong>Account Number:</strong> 6304581373</p>
-                    <p><strong>IFSC Code:</strong> IDIB000M263</p>
-                </div>
-                <div class="qr-code">
-                    <p>Scan to Donate:</p>
-                    <img src="/images/QRCODE.png" alt="QR Code for Donation">
+                    <p><strong>Bank Name:</strong> KARUR VYSYA BANK</p>
+                    <p><strong>Account Number:</strong> 1198172000012942</p>
+                    <p><strong>IFSC Code:</strong> KUBL0001198</p>
                 </div>
                 <div class="confirmation-link">
                     <p>Once you have donated, please <a href="confirmation.html">click here</a> to confirm your
@@ -880,8 +943,22 @@
                                     class="fa fa-envelope-open"></i> <span>SUBSCRIBE</span></a>
                         </div>
                         <div class="row">
-                            <div class="col-md-6">
-
+                            <div class="col-md-12" style="display: flex; justify-content: center;">
+                                <div class="col-md-6">
+                                    <section id="text-7" class="widget widget_text">
+                                        <h2 class="widget-title">Quick Links</h2>
+                                        <div class="textwidget">
+                                            <div class="box1 contact">
+                                                <ul>
+                                                    <li><a href="#">Quick Link : Link1</a></li>
+                                                    <li><a href="#">Quick Link : Link2</a></li>
+                                                    <li><a href="#">Quick Link : Link3</a></li>
+                                                    <li><a href="#">Quick Link : Link4</a></li>
+                                                    <li><a href="#">Quick Link : Link5</a></li>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
                                 <div class="col-md-6">
                                     <section id="text-7" class="widget widget_text">
                                         <h2 class="widget-title">Contact Us</h2>
@@ -889,8 +966,8 @@
                                             <div class="box1 contact">
                                                 <ul>
                                                     <li><img src="images/location.png" alt=""><strong>Vivekanandha
-                                                            TRUST</strong></li>
-                                                    <li>525,SunaiStreet,mambattu v&p polur taluk Tiruvannamalai dt.606
+                                                            Trust</strong><br>525,SunaiStreet,mambattu v&p polur taluk
+                                                        Tiruvannamalai dt.606
                                                         803, India</li>
                                                     <li><img src="images/phone.png" alt=""><strong>Phone
                                                             :</strong><br><a href="tel:+91 9444854521">+91
@@ -952,7 +1029,7 @@
                 </div>
             </div>
         </div>
-</div>
+    </div>
 </body>
 
 </html>

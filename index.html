@@ -285,7 +285,11 @@
     <div class="header-top">
         <img src="images/trustlogo.png" id="header-logo" alt="logo">
         <h1 id="header-title">VIVEKANANDHA TRUST<br>விவேகானந்தா அறக்கட்டளை</h1>
-        
+        <div id="rgn-number" class="blink">
+            <h5>RGN number</h5>
+            <h5>12834729347892374</h5>
+        </div>
+
         <style>
             #header-logo {
                 width: 160px;
@@ -295,6 +299,7 @@
                     width: 100px;
                 }
             }
+
             #header-title {
                 font-size: 2.5rem;
                 text-align: center;
@@ -304,12 +309,34 @@
                     font-size: 1.5rem;
                 }
             }
+
             .header-top {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 border-bottom: 1px solid #ccc;
                 padding: 6px;
+            }
+
+            #rgn-number {
+                font-size: small;
+                padding-right: 2rem;
+            }
+
+            .blink {
+                animation: blink-animation 3s infinite;
+            }
+
+            @keyframes blink-animation {
+
+                0%,
+                100% {
+                    opacity: 1;
+                }
+
+                50% {
+                    opacity: 0;
+                }
             }
         </style>
     </div>
@@ -324,7 +351,8 @@
                             <div class="mega-toggle-blocks-left"></div>
                             <div class="mega-toggle-blocks-center"></div>
                             <div class="mega-toggle-blocks-right">
-                                <div class="mega-toggle-block mega-menu-toggle-animated-block mega-toggle-block-0" id="mega-toggle-block-0">
+                                <div class="mega-toggle-block mega-menu-toggle-animated-block mega-toggle-block-0"
+                                    id="mega-toggle-block-0">
                                     <button aria-label="Toggle Menu"
                                         class="mega-toggle-animated mega-toggle-animated-slider" type="button"
                                         aria-expanded="false">
@@ -335,58 +363,108 @@
                                 </div>
                             </div>
                         </div>
-                        <ul id="mega-menu-main-menu" class="mega-menu max-mega-menu mega-menu-horizontal mega-no-js" data-event="hover_intent" data-effect="fade_up" data-effect-speed="200" data-effect-mobile="slide" data-effect-speed-mobile="200" data-mobile-force-width="body" data-second-click="go" data-document-click="collapse" data-vertical-behaviour="accordion" data-breakpoint="768" data-unbind="true" data-mobile-state="collapse_all" data-hover-intent-timeout="300" data-hover-intent-interval="100">
-                            <li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-current-menu-item mega-current_page_item mega-menu-item-home mega-align-bottom-left mega-menu-flyout mega-menu-item-1318" id="mega-menu-item-1318">
+                        <ul id="mega-menu-main-menu" class="mega-menu max-mega-menu mega-menu-horizontal mega-no-js"
+                            data-event="hover_intent" data-effect="fade_up" data-effect-speed="200"
+                            data-effect-mobile="slide" data-effect-speed-mobile="200" data-mobile-force-width="body"
+                            data-second-click="go" data-document-click="collapse" data-vertical-behaviour="accordion"
+                            data-breakpoint="768" data-unbind="true" data-mobile-state="collapse_all"
+                            data-hover-intent-timeout="300" data-hover-intent-interval="100">
+                            <li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-current-menu-item mega-current_page_item mega-menu-item-home mega-align-bottom-left mega-menu-flyout mega-menu-item-1318"
+                                id="mega-menu-item-1318">
                                 <a class="mega-menu-link" href="index.html" tabindex="0">Home</a>
                             </li>
-                            <li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-align-bottom-left mega-menu-flyout mega-menu-item-58" id="mega-menu-item-58">
-                                <a class="mega-menu-link" aria-haspopup="true" aria-expanded="false" tabindex="0">About Us<span class="mega-indicator"></span></a>
+                            <li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-align-bottom-left mega-menu-flyout mega-menu-item-58"
+                                id="mega-menu-item-58">
+                                <a class="mega-menu-link" aria-haspopup="true" aria-expanded="false" tabindex="0">About
+                                    Us<span class="mega-indicator"></span></a>
                                 <ul class="mega-sub-menu">
-                                    <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-56" id="mega-menu-item-56"><a class="mega-menu-link" href="aboutus.html">Founder</a> </li>
-                                    <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-56" id="mega-menu-item-56"><a class="mega-menu-link" href="aboutus.html">Vision Mission </a></li>
+                                    <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-56"
+                                        id="mega-menu-item-56"><a class="mega-menu-link"
+                                            href="aboutus.html?t=introduction">Introduction</a>
+                                    </li>
+                                    <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-56"
+                                        id="mega-menu-item-56"><a class="mega-menu-link"
+                                            href="aboutus.html?t=founder">Founder</a>
+                                    </li>
+                                    <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-56"
+                                        id="mega-menu-item-56"><a class="mega-menu-link"
+                                            href="aboutus.html?t=vision">Vision</a></li>
+                                    <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-56"
+                                        id="mega-menu-item-56"><a class="mega-menu-link"
+                                            href="aboutus.html?t=mission">Mission </a></li>
                                     <ul class="mega-sub-menu">
-                                </ul>
+                                    </ul>
                             </li>
                         </ul>
                         </li>
-                        <li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-align-bottom-left mega-menu-flyout mega-menu-item-900" id="mega-menu-item-900"><a class="mega-menu-link" aria-haspopup="true" aria-expanded="false" tabindex="0">Programmes<span class="mega-indicator"></span></a>
+                        <li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-align-bottom-left mega-menu-flyout mega-menu-item-900"
+                            id="mega-menu-item-900"><a class="mega-menu-link" aria-haspopup="true" aria-expanded="false"
+                                tabindex="0">Programmes<span class="mega-indicator"></span></a>
                             <ul class="mega-sub-menu">
-                                <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-post mega-menu-item-1055" id="mega-menu-item-1055"><a class="mega-menu-link" href="programmespage.html">Agricultural Division </a></li>
-                                <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-post mega-menu-item-1055" id="mega-menu-item-1055"><a class="mega-menu-link" ref="programmespage.html">IIRR COLLABORATION </a></li>
-                                <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-post mega-menu-item-712" id="mega-menu-item-712"></li>
-                                <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-post mega-menu-item-1141" id="mega-menu-item-1141"></li>
-                                <li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-menu-item-6889" id="mega-menu-item-6889">
-                                <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-post mega-menu-item-712" id="mega-menu-item-712"></li>
-                                <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-post mega-menu-item-1141" id="mega-menu-item-1141"></li>
-                                <li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-menu-item-6889" id="mega-menu-item-6889">
-                                    <ul class="mega-sub-menu">
-                                        <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-post mega-menu-item-708" id="mega-menu-item-708"><a class="mega-menu-link" href="https://www.mssrf.org/programmes/gender-grass-root-institutions/">Gender &amp; Grassroot Institutions</a></li>
-                                    </ul>
-                                </li>
+                                <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-post mega-menu-item-1055"
+                                    id="mega-menu-item-1055"><a class="mega-menu-link"
+                                        href="programmespage.html?t=iirr-colab">IIRR Collaboration </a></li>
+                                <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-post mega-menu-item-1055"
+                                    id="mega-menu-item-1055"><a class="mega-menu-link"
+                                        href="programmespage.html?t=govt-colab">Collaboration with Government</a></li>
+                                <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-post mega-menu-item-712"
+                                    id="mega-menu-item-712"><a class="mega-menu-link"
+                                        href="programmespage.html?t=tribal-welfare">Tribal Welfare</a></li>
+                                <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-post mega-menu-item-1141"
+                                    id="mega-menu-item-1141"><a class="mega-menu-link"
+                                        href="programmespage.html?t=efforts-impacts">Efforts and Impacts</a></li>
+                                <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-post mega-menu-item-712"
+                                    id="mega-menu-item-712"><a class="mega-menu-link"
+                                        href="programmespage.html?t=way-forward">Way Forward</a></li>
                             </ul>
                         </li>
-                        <li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-align-bottom-left mega-menu-flyout mega-menu-item-8418" id="mega-menu-item-8418"><a class="mega-menu-link" href="#" aria-haspopup="true" aria-expanded="false" tabindex="0">Media <span class="mega-indicator"></span></a>
+                        <li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-align-bottom-left mega-menu-flyout mega-menu-item-8418"
+                            id="mega-menu-item-8418"><a class="mega-menu-link" href="#" aria-haspopup="true"
+                                aria-expanded="false" tabindex="0">Media <span class="mega-indicator"></span></a>
                             <ul class="mega-sub-menu">
-                                <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-2042" id="mega-menu-item-2042"><a class="mega-menu-link" href="documentation.html">Photo gallery</a></li>
-                                <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-2042" id="mega-menu-item-2042"><a class="mega-menu-link" href="documentation.html">Vedio gallery</a></li>
-                                <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-2042" id="mega-menu-item-2042"><a class="mega-menu-link" href="documentation.html">Media coverage</a></li>
-                                <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-2042" id="mega-menu-item-2042"><a class="mega-menu-link" href="documentation.html">Accreditation</a></li>
-                                <li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-menu-item-6902" id="mega-menu-item-6902">
-                                    <ul class="mega-sub-menu">
-                                        <li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-7766" id="mega-menu-item-7766"><a class="mega-menu-link" href="https://flickr.com/photos/mssrf/albums">Photos</a></li>
-                                        <li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-7765" id="mega-menu-item-7765"><a target="_blank" class="mega-menu-link" href="http://www.youtube.com/channel/UCqPZ7OKG9vfLJgQFRlQv9sA">Videos</a></li>
-                                    </ul>
-                                </li>
+                                <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-2042"
+                                    id="mega-menu-item-2042"><a class="mega-menu-link"
+                                        href="documentation.html?t=photos">Photo
+                                        gallery</a></li>
+                                <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-2042"
+                                    id="mega-menu-item-2042"><a class="mega-menu-link"
+                                        href="documentation.html?t=video">Vedio
+                                        gallery</a></li>
+                                <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-2042"
+                                    id="mega-menu-item-2042"><a class="mega-menu-link"
+                                        href="documentation.html?t=media">Media
+                                        coverage</a></li>
                             </ul>
                         </li>
-                        <li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-align-bottom-left mega-menu-flyout mega-menu-item-59" id="mega-menu-item-59">
+                        <li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-align-bottom-left mega-menu-flyout mega-menu-item-8418"
+                            id="mega-menu-item-8418"><a class="mega-menu-link" href="#" aria-haspopup="true"
+                                aria-expanded="false" tabindex="0">Downloads <span class="mega-indicator"></span></a>
                             <ul class="mega-sub-menu">
-                                <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-1334" id="mega-menu-item-1334"></li>
-                                <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-has-children mega-menu-item-2207" id="mega-menu-item-2207">
+                                <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-2042"
+                                    id="mega-menu-item-2042"><a class="mega-menu-link"
+                                        href="documentation.html?t=accreditation">Accreditation</a></li>
+                                <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-2042"
+                                    id="mega-menu-item-2042"><a class="mega-menu-link"
+                                        href="documentation.html?t=documentation">Documentation</a></li>
+                            </ul>
+                        </li>
+                        <li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-align-bottom-left mega-menu-flyout mega-menu-item-59"
+                            id="mega-menu-item-59">
+                            <ul class="mega-sub-menu">
+                                <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-1334"
+                                    id="mega-menu-item-1334"></li>
+                                <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-has-children mega-menu-item-2207"
+                                    id="mega-menu-item-2207">
                                     <ul class="mega-sub-menu">
-                                        <li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-9473" id="mega-menu-item-9473"><a class="mega-menu-link" href="https://www.mssrf.org/careers-2/">Careers</a></li>
-                                        <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-484" id="mega-menu-item-484"><a class="mega-menu-link" href="https://www.mssrf.org/tenders/">Tenders</a></li>
-                                        <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-461" id="mega-menu-item-461"><a class="mega-menu-link" href="https://www.mssrf.org/contact-us/">Contact Us</a></li>
+                                        <li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-9473"
+                                            id="mega-menu-item-9473"><a class="mega-menu-link"
+                                                href="https://www.mssrf.org/careers-2/">Careers</a></li>
+                                        <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-484"
+                                            id="mega-menu-item-484"><a class="mega-menu-link"
+                                                href="https://www.mssrf.org/tenders/">Tenders</a></li>
+                                        <li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-461"
+                                            id="mega-menu-item-461"><a class="mega-menu-link"
+                                                href="https://www.mssrf.org/contact-us/">Contact Us</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -418,21 +496,26 @@
                 justify-content: center;
                 align-items: center;
             }
+
             .menu-header {
                 flex-grow: 1;
-                padding-left: 20%;
+                padding-left: 8%;
             }
+
             .donate-container {
                 width: max-content;
                 flex-grow: 0;
             }
 
             @media only screen and (max-width: 768px) {
-                .menu-header, .donate-container {
+
+                .menu-header,
+                .donate-container {
                     max-width: max-content;
                     width: max-content;
                     flex-grow: 0;
                 }
+
                 #contentInDe {
                     flex-direction: row-reverse;
                 }
@@ -440,39 +523,39 @@
         </style>
     </div>
 
-    <div class="container">
+    <div class="container" style="background-color: #e9e9ee; border-radius: 8px;">
         <div class="home-slider">
             <div class="swiper-container main_slider">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide" data-swiper-autoplay="" style="background: url(images/homeimage1.jpg) center center / cover no-repeat;">
+                    <div class="swiper-slide" data-swiper-autoplay="" style="background: url(images/homeimage1.jpg) center center / contain no-repeat;">
                         <div class="bg-pt">
                             <img src="" alt="">
                         </div>
                     </div>
 
                     <div class="swiper-slide" data-swiper-autoplay=""
-                        style="background: url(images/homeimage6.jpg) center center / cover no-repeat;">
+                        style="background: url(images/homeimage6.jpg) center center / contain no-repeat;">
                         <div class="bg-pt">
                             <img src="" alt="">
                         </div>
                     </div>
 
                     <div class="swiper-slide" data-swiper-autoplay=""
-                        style="background: url(images/homeimage3.jpg) center center / cover no-repeat;">
+                        style="background: url(images/homeimage3.jpg) center center / contain no-repeat;">
                         <div class="bg-pt">
                             <img src="" alt="">
                         </div>
                     </div>
 
                     <div class="swiper-slide" data-swiper-autoplay=""
-                        style="background: url(images/homeimage4.jpg) center center / cover no-repeat;">
+                        style="background: url(images/homeimage4.jpg) center center / contain no-repeat;">
                         <div class="bg-pt">
                             <img src="" alt="">
                         </div>
                     </div>
 
                     <div class="swiper-slide" data-swiper-autoplay=""
-                        style="background: url(images/homeimage5.JPG) center center / cover no-repeat;">
+                        style="background: url(images/homeimage5.JPG) center center / contain no-repeat;">
                         <div class="bg-pt">
                             <img src="" alt="">
                         </div>
@@ -754,100 +837,130 @@
         }
     </style>
 
-    <div class="container">
-        <div class="footer">
-            <div class="row gx-0">
-                <div class="col-md-4">
-                    <div class="bg-orange box leftbox">
-                        <section id="text-10" class="widget widget_text">
-                            <div class="textwidget">
-                                <p>
-                                <h2><u><b>Support</b></u></h2></a></p>
-                                <p>VIVEKANANDHA TRUST was established in 2014 by two young professionals, D. Balu and his friend, who were convinced that even the stubborn, endemic poverty of rural India can be solved. They believed that well-educated professionals working within communities can bring both the empathy and knowledge needed to help poor people improve their lives.</p>
-                                <p><a class="btn btn-white" href="donationpage.html">Donate Now <i class="fa fa-angle-right"></i></a></p>
+<div class="container">
+    <div class="footer">
+        <div class="row gx-0">
+            <div class="col-md-4">
+                <div class="bg-orange box leftbox">
+                    <section id="text-10" class="widget widget_text">
+                        <div class="textwidget">
+                            <p>
+                            <h2><u><b>Support</b></u></h2></a></p>
+                            <p>VIVEKANANDHA TRUST was established in 2014 by two young professionals, D. Balu and
+                                his friend, who were convinced that even the stubborn, endemic poverty of rural
+                                India can be solved. They believed that well-educated professionals working within
+                                communities can bring both the empathy and knowledge needed to help poor people
+                                improve their lives.</p>
+                            <p><a class="btn btn-white" href="donationpage.html">Donate Now <i
+                                        class="fa fa-angle-right"></i></a></p>
+                        </div>
+                    </section>
+                    <section id="text-11" class="widget widget_text">
+                        <div class="textwidget">
+                            <ul class="social-icon my-3 my-md-5">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <div class="copy"></div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="bg-blue box rightbox">
+                    <div class="newsletter mb-4">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#newslatterModal" class="subscribeto"><i
+                                class="fa fa-envelope-open"></i> <span>SUBSCRIBE</span></a>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12" style="display: flex; justify-content: center;">
+                            <div class="col-md-6">
+                                <section id="text-7" class="widget widget_text">
+                                    <h2 class="widget-title">Quick Links</h2>
+                                    <div class="textwidget">
+                                        <div class="box1 contact">
+                                            <ul>
+                                                <li><a href="#">Quick Link : Link1</a></li>
+                                                <li><a href="#">Quick Link : Link2</a></li>
+                                                <li><a href="#">Quick Link : Link3</a></li>
+                                                <li><a href="#">Quick Link : Link4</a></li>
+                                                <li><a href="#">Quick Link : Link5</a></li>
+                                        </div>
+                                    </div>
+                                </section>
                             </div>
-                        </section>
-                        <section id="text-11" class="widget widget_text">
-                            <div class="textwidget">
-                                <ul class="social-icon my-3 my-md-5">
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                                <div class="copy"></div>
+                            <div class="col-md-6">
+                                <section id="text-7" class="widget widget_text">
+                                    <h2 class="widget-title">Contact Us</h2>
+                                    <div class="textwidget">
+                                        <div class="box1 contact">
+                                            <ul>
+                                                <li><img src="images/location.png" alt=""><strong>Vivekanandha
+                                                        Trust</strong><br>525,SunaiStreet,mambattu v&p polur taluk
+                                                    Tiruvannamalai dt.606
+                                                    803, India</li>
+                                                <li><img src="images/phone.png" alt=""><strong>Phone
+                                                        :</strong><br><a href="tel:+91 9444854521">+91
+                                                        9444854521</a></li>
+                                                <li><img src="images/email-icon.png"
+                                                        alt=""><strong>Email:</strong><a
+                                                        href="vosam150@gmail.com">vosam150@gmail.com</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!-- Footer -->
+
+                                <!-- Aos animation-->
+                                <script src="js/aos.js"></script>
+                                <!-- Aos animation End-->
+
+                                <!-- Bootstrap and swiper slider-->
+                                <script src="js/popper.min.js"></script>
+                                <script src="js/bootstrap.min.js"></script>
+                                <script src="js/swiper-bundle.min.js"></script>
+                                <!-- Bootstrap and swiper slider end-->
+
+                                <!-- Number Counter-->
+                                <script src="js/waypoints.min.js"></script>
+                                <script src="js/jquery.counterup.min.js"></script>
+                                <!-- Number Counter End-->
+                                <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"
+                                    type="text/javascript"></script>
+                                <script src="js/custom.js"></script>
+
+                                <script>
+                                    AOS.init();
+                                </script>
+                                <link rel="stylesheet" id="wpforms-smart-phone-field-css"
+                                    href="css/intl-tel-input.min.css" type="text/css" media="all">
+                                <link rel="stylesheet" id="wpforms-full-css" href="css/wpforms-full.min.css"
+                                    type="text/css" media="all">
+                                <script type="text/javascript" src="js/jquery.intl-tel-input.min.js"
+                                    id="wpforms-smart-phone-field-js"></script>
+                                <script type="text/javascript" src="js/jquery.validate.min.js"
+                                    id="wpforms-validation-js"></script>
+                                <script type="text/javascript" src="js/jquery.inputmask.min.js"
+                                    id="wpforms-maskedinput-js"></script>
+                                <script type="text/javascript" src="js/mailcheck.min.js"
+                                    id="wpforms-mailcheck-js"></script>
+                                <script type="text/javascript" src="js/punycode.min.js"
+                                    id="wpforms-punycode-js"></script>
+                                <script type="text/javascript" src="js/wpforms.js" id="wpforms-js"></script>
+                                <script type="text/javascript">
+                                    /* <![CDATA[ */
+                                    var wpforms_settings = { "val_required": "This field is required.", "val_email": "Please enter a valid email address.", "val_email_suggestion": "Did you mean {suggestion}?", "val_email_suggestion_title": "Click to accept this suggestion.", "val_email_restricted": "This email address is not allowed.", "val_number": "Please enter a valid number.", "val_number_positive": "Please enter a valid positive number.", "val_confirm": "Field values do not match.", "val_checklimit": "You have exceeded the number of allowed selections: {#}.", "val_limit_characters": "{count} of {limit} max characters.", "val_limit_words": "{count} of {limit} max words.", "val_recaptcha_fail_msg": "Google reCAPTCHA verification failed, please try again later.", "val_empty_blanks": "Please fill out all blanks.", "uuid_cookie": "1", "locale": "en", "wpforms_plugin_url": "https:\/\/www.mssrf.org\/wp-content\/plugins\/wpforms\/", "gdpr": "", "ajaxurl": "https:\/\/www.mssrf.org\/wp-admin\/admin-ajax.php", "mailcheck_enabled": "1", "mailcheck_domains": [], "mailcheck_toplevel_domains": ["dev"], "is_ssl": "1", "currency_code": "USD", "currency_thousands": ",", "currency_decimals": "2", "currency_decimal": ".", "currency_symbol": "$", "currency_symbol_pos": "left", "val_requiredpayment": "Payment is required.", "val_creditcard": "Please enter a valid credit card number.", "val_post_max_size": "The total size of the selected files {totalSize} Mb exceeds the allowed limit {maxSize} Mb.", "val_time12h": "Please enter time in 12-hour AM\/PM format (eg 8:45 AM).", "val_time24h": "Please enter time in 24-hour format (eg 22:45).", "val_url": "Please enter a valid URL.", "val_fileextension": "File type is not allowed.", "val_filesize": "File exceeds max size allowed. File was not uploaded.", "post_max_size": "67108864", "val_password_strength": "A stronger password is required. Consider using upper and lower case letters, numbers, and symbols.", "val_phone": "Please enter a valid phone number.", "richtext_add_media_button": "", "entry_preview_iframe_styles": ["https:\/\/www.mssrf.org\/wp-includes\/js\/tinymce\/skins\/lightgray\/content.min.css?ver=5.7.12", "https:\/\/www.mssrf.org\/wp-includes\/css\/dashicons.min.css?ver=5.7.12", "https:\/\/www.mssrf.org\/wp-includes\/js\/tinymce\/skins\/wordpress\/wp-content.css?ver=5.7.12"] }
+                                    /* ]]> */
+                                </script>
                             </div>
-                        </section>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-8">
-                    <div class="bg-blue box rightbox">
-                        <div class="newsletter mb-4">
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#newslatterModal" class="subscribeto"><i
-                                    class="fa fa-envelope-open"></i> <span>SUBSCRIBE</span></a>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-
-                                <div class="col-md-6">
-                                    <section id="text-7" class="widget widget_text">
-                                        <h2 class="widget-title">Contact Us</h2>
-                                        <div class="textwidget">
-                                            <div class="box1 contact">
-                                                <ul>
-                                                    <li><img src="images/location.png" alt=""><strong>Vivekanandha TRUST</strong></li>
-                                                    <li>525,SunaiStreet,mambattu v&p polur taluk Tiruvannamalai dt.606 803, India</li>
-                                                    <li><img src="images/phone.png" alt=""><strong>Phone :</strong><br><a href="tel:+91 9444854521">+91 9444854521</a></li>
-                                                    <li><img src="images/email-icon.png" alt=""><strong>Email:</strong><a href="vosam150@gmail.com">vosam150@gmail.com</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </section>
-                                    <!-- Footer -->
-
-                                    <!-- Aos animation-->
-                                    <script src="js/aos.js"></script>
-                                    <!-- Aos animation End-->
-
-                                    <!-- Bootstrap and swiper slider-->
-                                    <script src="js/popper.min.js"></script>
-                                    <script src="js/bootstrap.min.js"></script>
-                                    <script src="js/swiper-bundle.min.js"></script>
-                                    <!-- Bootstrap and swiper slider end-->
-
-                                    <!-- Number Counter-->
-                                    <script src="js/waypoints.min.js"></script>
-                                    <script src="js/jquery.counterup.min.js"></script>
-                                    <!-- Number Counter End-->
-                                    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"
-                                        type="text/javascript"></script>
-                                    <script src="js/custom.js"></script>
-
-                                    <script>
-                                        AOS.init();
-                                    </script>
-                                    <link rel="stylesheet" id="wpforms-smart-phone-field-css"
-                                        href="css/intl-tel-input.min.css" type="text/css" media="all">
-                                    <link rel="stylesheet" id="wpforms-full-css" href="css/wpforms-full.min.css"
-                                        type="text/css" media="all">
-                                    <script type="text/javascript" src="js/jquery.intl-tel-input.min.js"
-                                        id="wpforms-smart-phone-field-js"></script>
-                                    <script type="text/javascript" src="js/jquery.validate.min.js"
-                                        id="wpforms-validation-js"></script>
-                                    <script type="text/javascript" src="js/jquery.inputmask.min.js"
-                                        id="wpforms-maskedinput-js"></script>
-                                    <script type="text/javascript" src="js/mailcheck.min.js"
-                                        id="wpforms-mailcheck-js"></script>
-                                    <script type="text/javascript" src="js/punycode.min.js"
-                                        id="wpforms-punycode-js"></script>
-                                    <script type="text/javascript" src="js/wpforms.js" id="wpforms-js"></script>
-                                    <script type="text/javascript">
-                                        /* <![CDATA[ */
-                                        var wpforms_settings = { "val_required": "This field is required.", "val_email": "Please enter a valid email address.", "val_email_suggestion": "Did you mean {suggestion}?", "val_email_suggestion_title": "Click to accept this suggestion.", "val_email_restricted": "This email address is not allowed.", "val_number": "Please enter a valid number.", "val_number_positive": "Please enter a valid positive number.", "val_confirm": "Field values do not match.", "val_checklimit": "You have exceeded the number of allowed selections: {#}.", "val_limit_characters": "{count} of {limit} max characters.", "val_limit_words": "{count} of {limit} max words.", "val_recaptcha_fail_msg": "Google reCAPTCHA verification failed, please try again later.", "val_empty_blanks": "Please fill out all blanks.", "uuid_cookie": "1", "locale": "en", "wpforms_plugin_url": "https:\/\/www.mssrf.org\/wp-content\/plugins\/wpforms\/", "gdpr": "", "ajaxurl": "https:\/\/www.mssrf.org\/wp-admin\/admin-ajax.php", "mailcheck_enabled": "1", "mailcheck_domains": [], "mailcheck_toplevel_domains": ["dev"], "is_ssl": "1", "currency_code": "USD", "currency_thousands": ",", "currency_decimals": "2", "currency_decimal": ".", "currency_symbol": "$", "currency_symbol_pos": "left", "val_requiredpayment": "Payment is required.", "val_creditcard": "Please enter a valid credit card number.", "val_post_max_size": "The total size of the selected files {totalSize} Mb exceeds the allowed limit {maxSize} Mb.", "val_time12h": "Please enter time in 12-hour AM\/PM format (eg 8:45 AM).", "val_time24h": "Please enter time in 24-hour format (eg 22:45).", "val_url": "Please enter a valid URL.", "val_fileextension": "File type is not allowed.", "val_filesize": "File exceeds max size allowed. File was not uploaded.", "post_max_size": "67108864", "val_password_strength": "A stronger password is required. Consider using upper and lower case letters, numbers, and symbols.", "val_phone": "Please enter a valid phone number.", "richtext_add_media_button": "", "entry_preview_iframe_styles": ["https:\/\/www.mssrf.org\/wp-includes\/js\/tinymce\/skins\/lightgray\/content.min.css?ver=5.7.12", "https:\/\/www.mssrf.org\/wp-includes\/css\/dashicons.min.css?ver=5.7.12", "https:\/\/www.mssrf.org\/wp-includes\/js\/tinymce\/skins\/wordpress\/wp-content.css?ver=5.7.12"] }
-                                        /* ]]> */
-                                    </script>
-                                </div>
-    </div></div></div></div></div></div>
+            </div>
+        </div>
     </div>
+</div>
 </body>
 </html>

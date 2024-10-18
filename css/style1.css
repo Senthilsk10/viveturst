@@ -752,8 +752,8 @@ img{
     margin-bottom: 0px;
 }
 .photo:hover img{
-    opacity: 0.8;
-    transform:scale(1.1);
+    /* opacity: 0.8; */
+    /* transform:scale(1.1); */
 }
 
 
