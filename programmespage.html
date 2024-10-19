@@ -844,5 +844,53 @@
         </div>
     </div>
 </div>
+<div class="social-sidebar">
+    <a href="https://www.facebook.com" target="_blank" class="social-link">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/facebook--v1.png" alt="Facebook">
+    </a>
+  
+    <a href="https://www.twitter.com" target="_blank" class="social-link">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/twitter.png" alt="Twitter">
+    </a>
+    <a href="https://www.whatsapp.com" target="_blank" class="social-link">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="LinkedIn">
+    </a>
+    <a href="https://www.instagram.com" target="_blank" class="social-link">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram">
+    </a>
+
+    <style>
+                    
+        .social-sidebar {
+            position: fixed;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            background-color: #002db3;
+            padding: 5px;
+            border-radius: 10px 10px 10px 10px;
+        }
+
+        .social-link {
+            margin: 10px 0;
+            display: block;
+            width: 30px;
+            height: 30px;
+        }
+
+        .social-link img {
+            width: 100%;
+            height: 100%;
+            transition: transform 0.3s;
+        }
+
+        .social-link:hover img {
+            transform: scale(1.3);
+            
+        }
+    </style>
+</div>
 </body>
 </html>
